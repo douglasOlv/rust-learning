@@ -14,6 +14,10 @@ b
 
 
 fn main() {
-    let var= fibonacci(2);
-    println!("{}", var );
+    assert_eq!(fibonacci(0), 1);
+    assert_eq!(fibonacci(1), 1);
+    assert_eq!(fibonacci(2), 2);
+    assert_eq!(fibonacci(3), 3);
+    assert_eq!(fibonacci(4), 5);
+    assert_eq!(fibonacci(5), 8);
 }
