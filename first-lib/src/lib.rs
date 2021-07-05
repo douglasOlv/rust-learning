@@ -12,6 +12,24 @@ pub fn indirect_access() {
     private_function();
 }
 
+pub struct Point {
+    x: f32,
+    y: f32,
+}
+
+impl Point {
+    fn get_x(&self) -> f32 {
+        self.x
+    }
+    fn get_y(&self) -> f32 {
+        self.y
+    }
+}
+
+pub fn create_point(x: f32, y: f32) -> Point {
+    Point { x, y }
+}
+
 #[cfg(test)]
 mod tests {
     #[test]
